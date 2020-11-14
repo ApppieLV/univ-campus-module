@@ -84,6 +84,19 @@ body {
   opacity: 1;
 }
 
+.detail-page .detail-page-image img {
+  width: 100%;
+}
+.detail-page .detail-page-content p {
+  font-size: 20px;
+}
+.detail-page .detail-page-content p span:first-of-type {
+  font-weight: 700;
+}
+.detail-page .detail-page-content p span.detail-page-price {
+  font-weight: 700;
+}
+
 .footer {
   background-color: #21409a;
 }

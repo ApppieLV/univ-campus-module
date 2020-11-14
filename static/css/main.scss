@@ -64,7 +64,6 @@ body {
         span {
           &:first-of-type {
             font-weight: 700;
-
           }
         }
       }
@@ -79,6 +78,27 @@ body {
         }
         .campus-component-text {
           opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.detail-page {
+  .detail-page-image {
+    img {
+      width: 100%;
+    }
+  }
+  .detail-page-content {
+    p {
+      font-size: 20px;
+      span {
+        &:first-of-type {
+          font-weight: 700;
+        }
+        &.detail-page-price {
+          font-weight: 700;
         }
       }
     }
