@@ -1,0 +1,93 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.container-fluid {
+  padding: 0;
+}
+.logotype {
+  width: 125px;
+}
+.header {
+  .navbar {
+    font-size: 20px;
+    .btn {
+      font-size: inherit;
+      &:focus,&:active {
+        box-shadow: none !important;
+      }
+    }
+  }
+}
+.welcoming-banner {
+  height: 85vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url('../images/welcoming-banner.jfif');
+  .welcoming-banner-text {
+    text-transform: uppercase;
+    background-color: rgba(255,255,255,.8);
+    font-size: 1.1rem;
+  }
+  #action_signUp_button {
+    font-size: 1.3rem;
+    &:focus,&:active {
+      box-shadow: none !important;
+    }
+  }
+}
+.invalid-feedback {
+  display: block;
+}
+.campus-table {
+  .campus-table-component {
+    background-color: #f8f9fa ;
+    padding: 0;
+    a {
+      display: block;
+      position: relative;
+      .campus-component-image {
+        width: 100%;
+        max-width: 100%;
+        transition: .3s linear;
+      }
+      .campus-component-text {
+        top: 0;
+        opacity: 0;
+        position: absolute;
+        font-size: 20px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        span {
+          &:first-of-type {
+            font-weight: 700;
+
+          }
+        }
+      }
+      .campus-component-title {
+        font-size: 22px;
+      }
+      &:hover {
+        text-decoration: none;
+        .campus-component-image {
+          transition: .2s linear;
+          opacity: .4;
+        }
+        .campus-component-text {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: #21409a;
+}
+
+
+@import "modals";

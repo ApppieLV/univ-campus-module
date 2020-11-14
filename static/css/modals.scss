@@ -1,0 +1,37 @@
+#signModal {
+  .modal-title {
+    margin-right: 1rem;
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .modal-title.active {
+    text-decoration: underline!important;
+  }
+  .close {
+    outline: none;
+  }
+  .modal-body {
+    .form {
+      display: none;
+    }
+    .active {
+      display: block;
+    }
+    //#signIn_enrollee_ticket-form {
+    //  display: none;
+    //}
+    .signIn_enrollee_switch,.signUp_enrollee_switch {
+      cursor: pointer;
+    }
+    #signIn_enrollee_ticket {
+      text-transform: uppercase;
+    }
+    #signUp_fio {
+      text-transform: capitalize;
+    }
+  }
+}
