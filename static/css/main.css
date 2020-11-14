@@ -1,0 +1,119 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.logotype {
+  width: 125px;
+}
+
+.header .navbar {
+  font-size: 20px;
+}
+.header .navbar .btn {
+  font-size: inherit;
+}
+.header .navbar .btn:focus, .header .navbar .btn:active {
+  box-shadow: none !important;
+}
+
+.welcoming-banner {
+  height: 85vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("../images/welcoming-banner.jfif");
+}
+.welcoming-banner .welcoming-banner-text {
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+}
+.welcoming-banner #action_signUp_button {
+  font-size: 1.3rem;
+}
+.welcoming-banner #action_signUp_button:focus, .welcoming-banner #action_signUp_button:active {
+  box-shadow: none !important;
+}
+
+.invalid-feedback {
+  display: block;
+}
+
+.campus-table .campus-table-component {
+  background-color: #f8f9fa;
+  padding: 0;
+}
+.campus-table .campus-table-component a {
+  display: block;
+  position: relative;
+}
+.campus-table .campus-table-component a .campus-component-image {
+  width: 100%;
+  max-width: 100%;
+  transition: 0.3s linear;
+}
+.campus-table .campus-table-component a .campus-component-text {
+  top: 0;
+  opacity: 0;
+  position: absolute;
+  font-size: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.campus-table .campus-table-component a .campus-component-text span:first-of-type {
+  font-weight: 700;
+}
+.campus-table .campus-table-component a .campus-component-title {
+  font-size: 22px;
+}
+.campus-table .campus-table-component a:hover {
+  text-decoration: none;
+}
+.campus-table .campus-table-component a:hover .campus-component-image {
+  transition: 0.2s linear;
+  opacity: 0.4;
+}
+.campus-table .campus-table-component a:hover .campus-component-text {
+  opacity: 1;
+}
+
+.footer {
+  background-color: #21409a;
+}
+
+#signModal .modal-title {
+  margin-right: 1rem;
+}
+#signModal .modal-title a:hover {
+  text-decoration: none;
+}
+#signModal .modal-title.active {
+  text-decoration: underline !important;
+}
+#signModal .close {
+  outline: none;
+}
+#signModal .modal-body .form {
+  display: none;
+}
+#signModal .modal-body .active {
+  display: block;
+}
+#signModal .modal-body .signIn_enrollee_switch, #signModal .modal-body .signUp_enrollee_switch {
+  cursor: pointer;
+}
+#signModal .modal-body #signIn_enrollee_ticket {
+  text-transform: uppercase;
+}
+#signModal .modal-body #signUp_fio {
+  text-transform: capitalize;
+}
+
+/*# sourceMappingURL=main.css.map */
