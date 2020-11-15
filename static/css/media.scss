@@ -1,0 +1,13 @@
+@media all and (max-width: 769px) {
+  #detail-galler-prev {
+    left: 0;
+    top: 40%;
+  }
+  #detail-galler-next {
+    right: 0;
+    top: 40%;
+  }
+  .activity-slider-nav {
+    justify-content: center!important;
+  }
+}

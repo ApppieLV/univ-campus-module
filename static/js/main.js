@@ -60,4 +60,22 @@ $(document).ready(function () {
     }
     toggleSignInModalInputs()
     toggleSignUpModalInputs()
+
+    $('.activity-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: $('#detail-activity-prev'),
+        nextArrow: $('#detail-activity-next'),
+    })
+    $('.detail-gallery').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow: $('#detail-galler-prev'),
+        nextArrow: $('#detail-galler-next'),
+    })
+
 })

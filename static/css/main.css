@@ -96,6 +96,76 @@ body {
 .detail-page .detail-page-content p span.detail-page-price {
   font-weight: 700;
 }
+.detail-page .detail-employees .detail-employees-item img {
+  width: 175px;
+  height: 175px;
+}
+.detail-page .detail-gallery .detail-gallery-item img {
+  width: 100%;
+}
+.detail-page .testimonial-table .testimonial-table-item {
+  text-align: center;
+}
+.detail-page .testimonial-table .testimonial-table-item .testimonials-item-image {
+  max-width: 200px;
+  width: 100%;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+}
+.detail-page .testimonial-table .testimonial-table-item .testimonial-title {
+  font-size: 22px;
+  font-weight: 700;
+}
+.detail-page .testimonial-table .testimonial-table-item .testimonial-subtitle {
+  font-weight: 500;
+}
+.detail-page .activity-slider {
+  width: 100%;
+}
+.detail-page .activity-slider .activity-slide .activity-slide-image {
+  width: 100%;
+  max-width: 100%;
+}
+.detail-page .activity-slider .activity-slide .activity-slide-content {
+  font-weight: 500;
+}
+
+.slider-arrow {
+  width: 15px;
+  cursor: pointer;
+}
+
+#detail-galler-prev, #detail-galler-next {
+  position: absolute;
+  top: 45%;
+  z-index: 500;
+  transition: 0.2s linear;
+}
+#detail-galler-prev:hover, #detail-galler-next:hover {
+  transition: 0.2s linear;
+}
+
+#detail-galler-next {
+  right: -5px;
+}
+#detail-galler-next:hover {
+  transform: scale(1.2);
+}
+
+#detail-galler-prev {
+  transform: rotateY(180deg);
+  left: -5px;
+}
+#detail-galler-prev:hover {
+  transform: rotateY(180deg) scale(1.2);
+}
+
+.activity-slider-nav {
+  bottom: 3rem;
+  margin: 0;
+  padding: 0;
+}
 
 .footer {
   background-color: #21409a;
@@ -127,6 +197,22 @@ body {
 }
 #signModal .modal-body #signUp_fio {
   text-transform: capitalize;
+}
+
+@media all and (max-width: 769px) {
+  #detail-galler-prev {
+    left: 0;
+    top: 40%;
+  }
+
+  #detail-galler-next {
+    right: 0;
+    top: 40%;
+  }
+
+  .activity-slider-nav {
+    justify-content: center !important;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
