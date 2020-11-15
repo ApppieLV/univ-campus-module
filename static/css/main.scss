@@ -64,7 +64,6 @@ body {
         span {
           &:first-of-type {
             font-weight: 700;
-
           }
         }
       }
@@ -85,9 +84,107 @@ body {
   }
 }
 
+.detail-page {
+  .detail-page-image {
+    img {
+      width: 100%;
+    }
+  }
+  .detail-page-content {
+    p {
+      font-size: 20px;
+      span {
+        &:first-of-type {
+          font-weight: 700;
+        }
+        &.detail-page-price {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  .detail-employees {
+    .detail-employees-item {
+      img {
+        width: 175px;
+        height: 175px;
+      }
+    }
+  }
+  .detail-gallery {
+    .detail-gallery-item {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .testimonial-table {
+    .testimonial-table-item {
+      text-align: center;
+      .testimonials-item-image {
+        max-width: 200px;
+        width: 100%;
+        height: 200px;
+        display: block;
+        margin: 0 auto;
+      }
+      .testimonial-title {
+        font-size: 22px;
+        font-weight: 700;
+      }
+      .testimonial-subtitle {
+        font-weight: 500;
+      }
+    }
+  }
+  .activity-slider {
+    width: 100%;
+    .activity-slide {
+      .activity-slide-image {
+        width: 100%;
+        max-width: 100%;
+      }
+      .activity-slide-content {
+        font-weight: 500;
+      }
+    }
+  }
+}
+.slider-arrow {
+  width: 15px;
+  cursor: pointer;
+}
+#detail-galler-prev, #detail-galler-next {
+  position: absolute;
+  top: 45%;
+  z-index: 500;
+  transition: .2s linear;
+  &:hover {
+    transition: .2s linear;
+  }
+}
+#detail-galler-next {
+  right: -5px;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+#detail-galler-prev {
+  transform: rotateY(180deg);
+  left: -5px;
+  &:hover {
+    transform: rotateY(180deg) scale(1.2);
+  }
+}
+.activity-slider-nav {
+  bottom: 3rem;
+  margin: 0;
+  padding: 0;
+}
+
 .footer {
   background-color: #21409a;
 }
 
-
 @import "modals";
+@import "media";
